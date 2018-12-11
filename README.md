@@ -74,7 +74,7 @@ In the Eq. 6 of the paper, a small epsilon value is needed for SURE estimation. 
 You can get started with the [DnCNN-Tensorflow](https://github.com/crisb-DUT/DnCNN-tensorflow) to implement DnCNN-SURE.
  * SURE estimation is almost the same, except set as x_dim=tf.to_float(tf.shape(self.Y)[1]) (side length of square input image).
  * Add the noise only once at the beginning of the training. To do this remove tensor for the noisy image and replace it with a placeholder and feed a noisy image during training just as in MNIST case (lines 181-183 of our code).
- * Change epsilon value to self.eps = self.sigma\*1.4\*self.sigma, this is a tuned value for DnCNN. You can set the epsilon similarly for your own model.
+ * Change epsilon value to self.eps = self.sigma\*1.4\*0.0001, this is a tuned value for DnCNN. You can set the epsilon similarly for your own model.
 
 ## Acknowledgements
 * We thank @crisb-DUT for his repository [DnCNN-Tensorflow](https://github.com/crisb-DUT/DnCNN-tensorflow) as our code structure closely follows it (dataset import and feeding, loading checkpoints etc.).
