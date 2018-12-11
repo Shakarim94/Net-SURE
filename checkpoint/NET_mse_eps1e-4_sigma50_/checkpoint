@@ -1,0 +1,6 @@
+model_checkpoint_path: "NET-tensorflow-41250"
+all_model_checkpoint_paths: "NET-tensorflow-40150"
+all_model_checkpoint_paths: "NET-tensorflow-40425"
+all_model_checkpoint_paths: "NET-tensorflow-40700"
+all_model_checkpoint_paths: "NET-tensorflow-40975"
+all_model_checkpoint_paths: "NET-tensorflow-41250"
