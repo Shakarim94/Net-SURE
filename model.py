@@ -27,7 +27,7 @@ def NET(input):
 
 
 class denoiser(object):
-    def __init__(self, sess, dataset, sigma, eps, cost_str, ckpt_dir, sample_dir, log_dir, type):
+    def __init__(self, sess, dataset, sigma, eps, cost_str, ckpt_dir, sample_dir, log_dir):
         self.sess = sess
         self.sigma = sigma
         self.eps = eps
@@ -165,8 +165,8 @@ class denoiser(object):
         tf.get_default_graph().finalize() #making sure that the graph is fixed at this point
         
         print("Training set shape:")
-        print("\n")
         print(np.shape(train_noisy))
+        print("\n")
         #training loop
         for epoch in xrange(start_epoch, epoch):
             

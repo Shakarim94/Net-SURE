@@ -64,7 +64,7 @@ def main(_):
         print("GPU\n")
         gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.9)
         with tf.Session(config=tf.ConfigProto(gpu_options=gpu_options)) as sess:
-            model = denoiser(sess, dataset=mnist, sigma=args.sigma, eps=args.eps, cost_str=args.cost, ckpt_dir=ckpt_dir, sample_dir=sample_dir, log_dir=log_dir, type=args.type)
+            model = denoiser(sess, dataset=mnist, sigma=args.sigma, eps=args.eps, cost_str=args.cost, ckpt_dir=ckpt_dir, sample_dir=sample_dir, log_dir=log_dir)
             if args.phase == 'train':
                 denoiser_train(model, lr=lr)
             elif args.phase == 'test':
@@ -75,7 +75,7 @@ def main(_):
     else:
         print("CPU\n")
         with tf.Session() as sess:
-            model = denoiser(sess, dataset=mnist, sigma=args.sigma, eps=args.eps, cost_str=args.cost, ckpt_dir=ckpt_dir, sample_dir=sample_dir, log_dir=log_dir, type=args.type)
+            model = denoiser(sess, dataset=mnist, sigma=args.sigma, eps=args.eps, cost_str=args.cost, ckpt_dir=ckpt_dir, sample_dir=sample_dir, log_dir=log_dir)
             if args.phase == 'train':
                 denoiser_train(model, lr=lr)
             elif args.phase == 'test':
