@@ -76,7 +76,7 @@ You can get started with the [DnCNN-Tensorflow](https://github.com/crisb-DUT/DnC
  * Add the noise only once at the beginning of the training. To do this remove tensor for the noisy image and replace it with a placeholder and feed a noisy image during training just as in MNIST case (lines 181-183 of our code).
  * Change epsilon value to self.eps = self.sigma\*1.4\*0.0001, this is a tuned value for DnCNN. You can set the epsilon similarly for your own model.
 
-## Acknowledgements
-* We thank @crisb-DUT for his repository [DnCNN-Tensorflow](https://github.com/crisb-DUT/DnCNN-tensorflow) as our code structure closely follows it (dataset import and feeding, loading checkpoints etc.).
+## Reference
+* Code structure follows the repository [DnCNN-Tensorflow](https://github.com/crisb-DUT/DnCNN-tensorflow) of @crisb-DUT (dataset import and feeding, loading checkpoints etc.).
 
 
