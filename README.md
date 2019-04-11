@@ -8,7 +8,7 @@
 
 ## Resources
 * [Paper and supplementary materials](https://papers.nips.cc/paper/7587-training-deep-learning-based-denoisers-without-ground-truth-data)
-* [Extended Paper with new experiments and results (fine-tuning with SURE, extension to Poisson)](https://arxiv.org/pdf/1803.01314.pdf)
+* [Extended Paper with new experiments and results (extension to colored blind denoising, fine-tuning with SURE, extension to Poisson)](https://arxiv.org/pdf/1803.01314.pdf)
 * Contact: Shakarim Soltanayev (shakarim94@gmail.com), (shakarim@unist.ac.kr)
 
 ## Results from the paper
